@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="calculator-container">
+        <div class="left-container">
+          <div class="bill">
+            <p>Bill</p>
+            <input name="bill" type="text" class="bill-input" id="amount" placeholder="$" />
+          </div>
+          <div class="tip-percentage">
+            <p>Select Tip %</p>
+            <div class="button-percentage-container">
+              <button class="btn-percentage tips">5%</button>
+              <button class="btn-percentage tips">10%</button>
+              <button class="btn-percentage active tips">15%</button>
+              <button class="btn-percentage tips">25%</button>
+              <button class="btn-percentage tips">50%</button>
+              <input type="text" placeholder="Custom" class="btn-custom tips" id="custom-discount" />
+            </div>
+          </div>
+          <div class="persons-quantity">
+            <div class ="people-container">
+            <p>Number of People</p>
+            <p class="msg-error">Can´t be zero</p>
+          </div>
+            <input type="text" class="bill-input" id="people"placeholder="1"/>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="tip-container">
+            <div>
+              <p>Tip Amount / </p>
+                <p class="p-dark">person</p>
+                
+              </p>
+            </div>
+            <div class="result">$0.0</div>
+          </div>
+          <div>
+            <div class="total-container">
+              <div>
+                <p>Total / </p>
+                <p class="p-dark">person</p>
+                </p>
+              </div>
+              <div class="result">$0.0</div>
+            </div>
+          </div>
+          <button class="reset">RESET</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Adrian Lunazzi</a>.
+    </div>
+    <script src="/javascript/calc.js"></script>
+  </body>
+</html>
